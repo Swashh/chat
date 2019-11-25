@@ -4,9 +4,12 @@
   <title>RailsChatTutorial</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-  <%= stylesheet_link_tag    'application', media: 'all' %>
+
   <%= javascript_pack_tag 'application' %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+
 </head>
 
 <body>
@@ -14,7 +17,7 @@
   <div class="row">
     <div class="col-12">
       <%= render partial: 'shared/navigation_bar' %>
-      <div class="my-3">
+      <div class="my-3 test">
         <%= yield %>
       </div>
     </div>
